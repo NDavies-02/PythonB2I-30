@@ -1,4 +1,5 @@
 while True:
+
     def findLetter():
         stringtoSearch = input("Please enter a string: ")
         charToFind = input("What character should we search for? ")
@@ -12,7 +13,9 @@ while True:
         stringtoReverse = input("Enter the string you'd like to reverse: ")
         print(stringtoReverse[::-1])
 
-    choice = input("Please choose a function: A - String Search; or B - String Reversal: ")
+    choice = input(
+        "Please choose a function: A - String Search; or B - String Reversal: "
+    )
 
     if choice in ["A", "a"]:
         findLetter()

@@ -10,7 +10,9 @@ def usrinput():
 def selection(num1, num2):
     print("")
     print("Please make a selection.")
-    choice = input("1 - Calculate GCD; 2 - Calculate LCM; 3 - Pick New Numbers;  4 - Help: ")
+    choice = input(
+        "1 - Calculate GCD; 2 - Calculate LCM; 3 - Pick New Numbers;  4 - Help: "
+    )
     print("")
     if choice == "1":
         calcGCD(num1, num2)
@@ -29,21 +31,22 @@ def selection(num1, num2):
         selection(num1, num2)
     else:
         print("Invalid selection.")
-        selection(num1,num2)
+        selection(num1, num2)
 
 
 def calcGCD(a, b):
     result = math.gcd(a, b)
     result = str(result)
     print("")
-    print("The GCD of " + str(a) + " and " + str(b) +" is: " + result)
+    print("The GCD of " + str(a) + " and " + str(b) + " is: " + result)
 
 
 def calcLCM(a, b):
     result = math.lcm(a, b)
     result = str(result)
     print("")
-    print("The LCM of " + str(a) + " and " + str(b) +" is: " + result)
+    print("The LCM of " + str(a) + " and " + str(b) + " is: " + result)
+
 
 numbers = usrinput()
 num1 = numbers[0]
