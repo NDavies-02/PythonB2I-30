@@ -19,8 +19,7 @@ while True:
     if choice in ["A", "a"]:
         findLetter()
         break
-    elif choice in ["B", "b"]:
+    if choice in ["B", "b"]:
         reverseString()
         break
-    else:
-        print("Invalid selection.")
+    print("Invalid selection.")
