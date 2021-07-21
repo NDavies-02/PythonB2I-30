@@ -63,7 +63,7 @@ You can access `var` using:
 `print(var2.var)`
 Result: "text"
 
-## File Handling ##
+## Section 9: File Handling ##
 **File Operations**
 **Note** that each file you open should be assigned to a variable. So you can open multiple files. Each variable that is a file type will have the following functions applicable to them.
 - Open a file in read/write mode - `var=open("Path_to_file", "r/w")`
