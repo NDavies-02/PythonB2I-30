@@ -21,4 +21,3 @@ while True:
         break
     else:
         print("Invalid selection.")
-    
