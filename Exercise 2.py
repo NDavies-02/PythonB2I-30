@@ -4,9 +4,9 @@ while True:
         stringtoSearch = input("Please enter a string: ")
         charToFind = input("What character should we search for? ")
         result = charToFind in stringtoSearch
-        if result == True:
+        if result is True:
             print("The character IS present in the string.")
-        elif result == False:
+        elif result is False:
             print("The character IS NOT present in the string.")
 
     def reverseString():
