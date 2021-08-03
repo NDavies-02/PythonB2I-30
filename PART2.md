@@ -152,8 +152,7 @@ When you create a child class from a parent class, the child will inherit all of
 
     def childFunc(self):
 
-        childFuncCode goes here
-`
+        childFuncCode goes here`
 
 **Call parentFunc from parent class**
 `p = Parent
