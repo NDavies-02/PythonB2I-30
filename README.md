@@ -17,3 +17,6 @@ Also contains `notes.md` with key highlights from the lectures.
 Whilst this section is just a single markdown document, there are some extra key bits of information you may find useful.
 This is adapted from the Udemy course of the same name, accessible here: https://www.udemy.com/share/101r1i2@PW1jVGFKc1wLdE5KBnR/fhRuSn1iYw==/
 There may be some overlap with the materials.
+
+# Spotted an error?
+Create an issue describing what is wrong.
