@@ -3,9 +3,9 @@ The following are my notes for key concepts from the lectures.
 
 ## Lists ##
 `list[start:end]` - Get multiple items between and inclusive of the specified indices.
-<p></p>
+
 If start=1 and end=3, we would get the 2nd, 3rd, 4th item in the list.
-<p></p>
+
 `del list[index]` - delete item in list
 
 ## Arithmetic Operations & Strings ##
@@ -38,10 +38,13 @@ So `print(dict["Mon"])` would get you `1`.
 
 ## Tuples ##
 **Recap of lists and dicts**
+
 `list = ["item1", "item2"]`
+
 `dict = {"key1":value1, "key2":value2}`
 
 **Creating a tuple**
+
 `tup = ('item1', 'item2', 'item3')`
 
 **The most important thing about a tuple**: They cannot be updated. It is more like a read-only list - so you can access all the functions of lists such as slicing but you just can't change the values.
@@ -79,13 +82,13 @@ And you can write loops within loops. known as **nested loops**.
 Code within a while loop is executed whilst the specified condition is true.
 It will stop only when the condition is no longer true. If the condition is forever true, an **infinite loop** is caused.
 
-Syntax:
+**Syntax**
 ```
 while condition:
     do this code
 ```
     
-Example:
+**Example**
 ```
 x=100
 while x>=50:
@@ -95,9 +98,9 @@ while x>=50:
 This would print numbers in descending order, 100 to 50. As once it gets to 49 the condition is no longer met, so the code within the loop stops.
 #### Key Loop Functions ####
 `break`: When this line is reached, stop executing the code in the loop.
-<p></p>
+
 `continue`: Carry on looping (skip anything after the continue statement).
-<p></p>
+
 `pass`: Acts as filler code but does not do anything. A good placeholder.
 
 ## Try and Except ##
@@ -126,9 +129,9 @@ return valToReturn
 ```
 
 When you call a function, you can store a returned value in a global variable:
-<p></p>
+
 `var1=funcName`
-<p></p>
+
 In this case, `var1` would contain 13.
 
 ## Object Oriented Programming (OOP) ##
@@ -159,9 +162,9 @@ That is essentially the point of inheritance.
 When you create a child class from a parent class, the child will inherit all of the functions of the parent class, **as well as** having its own functions.
 
 **Example**
-<p></p>
+
 **Create parent class**
-<p></p>
+
 ```
 class Parent
     def parentFunc(self):
@@ -178,11 +181,12 @@ class Child(Parent)
 ```
 
 **Call parentFunc from parent class**
-<p></p>
+
 ```
 p = Parent
-p.parentFunc() - this would execute the code in parentFunc
+p.parentFunc()
 ```
+*This would execute the code in parentFunc*
 
 **Call childFunc from child class**
 ```
@@ -191,10 +195,11 @@ c.childFunc() - this would execute the code in childFunc
 ```
 
 **Call parentFunc from child class**
+
 `c.parentFunc()` - this would execute the code in `parentFunc` inherited from the parent class but still from the child.
 
 *Example use case*
-<p></p>
+
 You could have a parent class for People, and child classes for Male and Female.
 
 ### Redefining functions ###
