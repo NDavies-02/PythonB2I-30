@@ -70,3 +70,104 @@ This 'stuff' which is your code, will be run over and over again for each item i
 
 You can also specify ranges of numbers - `for i in range(start, end)`
 And you can write loops within loops. known as **nested loops**.
+### While Loops ###
+Code within a while loop is executed whilst the specified condition is true.
+It will stop only when the condition is no longer true. If the condition is forever true, an **infinite loop** is caused.
+
+Syntax:
+`while condition:
+    do this code`
+    
+Example:
+`x=100
+while x>=50:
+    print(x)
+    x=x-1`
+This would print numbers in descending order, 100 to 50. As once it gets to 49 the condition is no longer met, so the code within the loop stops.
+#### Key Loop Functions ####
+`break`: When this line is reached, stop executing the code in the loop.
+`continue`: Carry on looping (skip anything after the continue statement).
+`pass`: Acts as filler code but does not do anything. A good placeholder.
+
+## Try and Except ##
+Useful for cases where there is a good possibility the code will break. For example, code that relies on user input. It prevents the code from crashing completely.
+Python will try to run the code. If there is an *exception* (i.e. something goes wrong), using the except statement provides a fall-back (for example, print an error) that will be run instead of the program crashing.
+
+It is a good idea to keep the except code simple so that it doesn't crash itself...
+
+**Syntax**
+`try:
+    to run this code
+except:
+    if something goes wrong there, do this instead.`
+    
+## Functions ##
+Functions can be used to wrap related lines of code that perform a particular job together.
+When you add items to a list for example, you are using built-in functions. (Multiple related functions are often put in classes).
+
+**Defining a function**
+`def funcName(params):
+    print("any code can go in a function")
+    valToReturn=13
+return valToReturn`
+
+When you call a function, you can store a returned value in a global variable:
+`var1=funcName`
+In this case, var1 would contain 13.
+
+## Object Oriented Programming (OOP) ##
+In object-oriented programming, a key idea is **classes**.
+And **objects** are instances of classes, of which you can have multiple.
+
+**To define a class in Python**:
+
+`class className:
+    def funcName(self, anyOtherParams):
+        code`
+When you create a function within a class, the function must have the parameter self, regardless of it using any other parameters.
+
+**To call a function within a class**:
+
+First you must create an object.
+`objName = className`
+
+Then you can call any function from the object.
+`objName.funcName(anyOtherParams)`
+
+## Inheritance ##
+Imagine you created a class called parentClass.
+You want to make another class that inherits properties and functionality of the parentClass, say, childClass.
+
+That is essentially the point of inheritance.
+When you create a child class from a parent class, the child will inherit all of the functions of the parent class, **as well as** having its own functions.
+
+**Example**
+**Create parent class**
+`class Parent
+    def parentFunc(self):
+        parentFuncCode goes here`
+
+**Create child class**
+`class Child(Parent)
+
+    def childFunc(self):
+
+        childFuncCode goes here
+`
+
+**Call parentFunc from parent class**
+`p = Parent
+p.parentFunc() - this would execute the code in parentFunc`
+
+**Call childFunc from child class**
+`c = Child
+c.childFunc() - this would execute the code in childFunc`
+
+**Call parentFunc from child class**
+`c.parentFunc()` - this would execute the code in `parentFunc` inherited from the parent class but still from the child.
+
+*Example use case*
+You could have a parent class for People, and child classes for Male and Female.
+
+### Redefining functions ###
+You can redefine a parent's function within a child simply by creating a function within the child of the same name.
