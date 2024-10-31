@@ -19,4 +19,4 @@ This is adapted from the Udemy course of the same name, accessible here: https:/
 There may be some overlap with the materials.
 
 # Spotted an error?
-Create an issue describing what is wrong.
+This repo is no longer maintained.
